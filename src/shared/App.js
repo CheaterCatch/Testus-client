@@ -6,7 +6,8 @@ import { Grid } from "../elements";
 
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
-import Header from '../conponents/Header';
+import Header from '../components/Header';
+import MainPage from '../pages/MainPage';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
       <Grid isRoot>
         {/* <Header></Header> */}
         <BrowserRouter>
-          <Route exact path="/" component={Login} />
+          <Route exact path="/" component={MainPage} />
           <Route path="/signup" exact component={Signup}/>
+          <Route path="/login" exact component={Login}/>
         </BrowserRouter>
       </Grid>
     </React.Fragment>

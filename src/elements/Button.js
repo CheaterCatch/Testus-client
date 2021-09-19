@@ -24,7 +24,7 @@ const Button = (props) => {
   );
 };
 
-Button.defaultProps = {
+Button.defaultProps = { // 버튼 스타일 없을 때 디폴트 디자인 값
   text: false,
   children: null,
   _onClick: () => {},
@@ -33,7 +33,7 @@ Button.defaultProps = {
   width: '30%',
 };
 
-const ElButton = styled.button`
+const ElButton = styled.button` // 로그인 버튼 디자인
   width: ${(props) => props.width};
   background-color: #0D6EFD;
   color: #ffffff;
@@ -43,7 +43,17 @@ const ElButton = styled.button`
   ${(props) => (props.margin? `margin: ${props.margin};` : '')}
 `;
 
-// const FloatButton = styled.button`
+const FloatButton = styled.button` // 카톡 로그인 버튼 디자인
+    width: ${(props) => props.width};
+    background-color: #ffd400;
+    text-color: #ffffff;
+    padding: 12px 0px;
+    box-sizing: border-box;
+    border: none;
+    ${(props) => (props.margin? `margin: ${props.margin};` : '')}
+`;
+
+// const FloatButton = styled.button` // 동그란 버튼 만들기
 //   width: ${(props) => props.width};
 // //   height: 50px;
 //   background-color: #ffd400;
@@ -60,15 +70,5 @@ const ElButton = styled.button`
 //   border: none;
 // //   border-radius: 50px;
 // `;
-
-const FloatButton = styled.button`
-    width: ${(props) => props.width};
-    background-color: #ffd400;
-    color: #ffffff;
-    padding: 12px 0px;
-    box-sizing: border-box;
-    border: none;
-    ${(props) => (props.margin? `margin: ${props.margin};` : '')}
-`;
 
 export default Button;

@@ -25,15 +25,15 @@ const Image = (props) => {
 
     return (
         <React.Fragment>
-
+            
         </React.Fragment>
     )
 }
 
 Image.defaultProps = {
-    shape: "circle",
-    src: "https://mean0images.s3.ap-northeast-2.amazonaws.com/4.jpeg",
-    size: 36,
+  shape: "circle",
+  src: "https://pbs.twimg.com/media/DKx22dkUEAESRYx.jpg",
+  size: 36,
 };
 
 const AspectOutter = styled.div`
@@ -43,7 +43,7 @@ const AspectOutter = styled.div`
 
 const AspectInner = styled.div`
     position: relative;
-    padding-top: 75%;
+    padding-top: 35%;
     overflow: hidden;
     background-image: url("${(props) => props.src}");
     background-size: cover;

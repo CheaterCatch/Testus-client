@@ -8,7 +8,7 @@ const Login = (props) => {
       <Text size="32px" bold>
             {props.user_name}
         </Text>
-        <Image shape="circle" src={props.src}/>
+        {/* <Image shape="rectangle" src={props.src}/> */}
 
         <Grid padding="16px 0px">
           <Input
@@ -29,7 +29,7 @@ const Login = (props) => {
         </Grid>
 
         <Button
-          text="sign up"
+          text="Login"
           _onClick={() => {
             console.log("로그인 했어!");
           }}
@@ -37,7 +37,7 @@ const Login = (props) => {
 
         <Grid is_flex>
             <Text>Don’t have an account?</Text>
-            <Text>Sign up now</Text>
+            <Text>{props.sign_up_now}</Text>
         </Grid>
         
         <Text>-----or-----</Text>
@@ -56,7 +56,8 @@ const Login = (props) => {
 
 Login.defaultProps ={
     user_name: "WELCOME QUESTIONER",
-    image_url: "https://mean0images.s3.ap-northeast-2.amazonaws.com/4.jpeg",
+    image_url: "https://cdn.mkhealth.co.kr/news/photo/202004/img_MKH200424005_0.jpg",
+    sign_up_now: "sign up now",
 }
 
 export default Login;
