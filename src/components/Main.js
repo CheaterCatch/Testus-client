@@ -5,13 +5,10 @@ const Main = (props) => {
 
     return (
         <Grid padding="16px">
-            <Grid padding="16px">
-                <Text size="32px" bold>TestUs</Text>
-            </Grid>
             <Grid is_flex>
                 <Image shape="rectangle" src={props.src}/>
             </Grid>
-            <Grid padding="16px">
+            <Grid is_flex>
                 <Text>부정행위 방지</Text>
                 <Text>자동채점</Text>
                 <Text>결과분석</Text>

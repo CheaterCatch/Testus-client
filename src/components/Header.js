@@ -4,15 +4,10 @@ import {Grid, Text, Button} from "../elements";
 const Header = (props) => {
     return (
         <React.Fragment>
-            <Grid is_flex padding="4px 16px">
-                <Grid is_flex>
-                    <Button text="로그인"></Button>
-                </Grid>
-            </Grid>
-            <Grid is_flex padding="4px 16px">
-                <Grid is_flex>
-                    <Button text="회원가입"></Button>
-                </Grid>
+            <Grid is_flex padding="16px">
+                <Text>시험지</Text>
+                <Text size="32px" bold>TestUs</Text>
+                <Text>마이페이지</Text>
             </Grid>
         </React.Fragment>
     )

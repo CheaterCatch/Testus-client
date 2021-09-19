@@ -13,7 +13,7 @@ function App() {
   return (
     <React.Fragment>
       <Grid isRoot>
-        {/* <Header></Header> */}
+        <Header></Header>
         <BrowserRouter>
           <Route exact path="/" component={MainPage} />
           <Route path="/signup" exact component={Signup}/>

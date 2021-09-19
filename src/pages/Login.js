@@ -35,9 +35,17 @@ const Login = (props) => {
           }}
         ></Button>
 
-        <Grid is_flex>
-            <Text>Don’t have an account?</Text>
-            <Text>{props.sign_up_now}</Text>
+        <Grid is_flex padding="4px 16px">
+            <Grid is_flex>
+                <Grid>
+                    <Text>Don’t have an account?</Text>
+                </Grid>
+                <Grid>
+                    <Button>Sign up now</Button>
+                    <Button>Sign up now</Button>
+                </Grid>
+                
+            </Grid>
         </Grid>
         
         <Text>-----or-----</Text>
