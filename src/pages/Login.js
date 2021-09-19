@@ -42,7 +42,12 @@ const Login = (props) => {
         
         <Text>-----or-----</Text>
         <Text>Continue with social media</Text>
-        <Text>Login with Kakao</Text>
+        <Button is_float
+          text="Login with Kakao"
+          _onClick={() => {
+            console.log("카톡으로 로그인 할래!");
+          }}
+        ></Button>
 
       </Grid>
     </React.Fragment>

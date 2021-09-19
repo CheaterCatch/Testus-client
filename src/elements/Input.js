@@ -5,6 +5,14 @@ import { Text, Grid } from "./index";
 
 const Input = (props) => {
     const {placeholder, _onChange, label} = props;
+
+    // if (type="radio") {
+    //   return (
+    //     <React.Fragment>
+    //       <RadioInput></RadioInput>
+    //     </React.Fragment>
+    //   );
+    // }
   
   return (
     <React.Fragment>
@@ -27,5 +35,9 @@ const ElInput = styled.input`
   padding: 12px 4px;
   box-sizing: border-box;
 `;
+
+// const RadioInput = styled.input`
+
+// `;
 
 export default Input;

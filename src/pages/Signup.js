@@ -10,9 +10,11 @@ const Signup = (props) => {
         </Text>
 
         <Grid padding="16px 0px">
+            <Input type="radio"></Input>
           <Text>
             출제자
           </Text>
+          <Input type="radio"></Input>
           <Text>
             응시자
           </Text>
