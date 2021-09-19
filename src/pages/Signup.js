@@ -6,16 +6,16 @@ const Signup = (props) => {
     <React.Fragment>
       <Grid padding="16px">
         <Text size="32px" bold>
-            CREATE ACCOUNT
+            {props.user_name}
         </Text>
 
         <Grid padding="16px 0px">
-          <Input
-            label="출제자"
-            _onChange={() => {
-              console.log("!!");
-            }}
-          />
+          <Text>
+            출제자
+          </Text>
+          <Text>
+            응시자
+          </Text>
         </Grid>
 
         <Grid padding="16px 0px">
@@ -78,6 +78,8 @@ const Signup = (props) => {
   );
 };
 
-Signup.defaultProps = {};
+Signup.defaultProps = {
+    user_name: "CREATE ACCOUNT",
+};
 
 export default Signup;

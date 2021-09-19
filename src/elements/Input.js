@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Grid } from "./index";
+import { Text, Grid } from "./index";
 
 const Input = (props) => {
-    const {placeholder, _onChange} = props;
+    const {placeholder, _onChange, label} = props;
   
   return (
     <React.Fragment>
       <Grid>
+        <Text margin="0px">{label}</Text>
         <ElInput placeholder={placeholder} onChange={_onChange}/>
       </Grid>
     </React.Fragment>
