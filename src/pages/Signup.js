@@ -72,7 +72,7 @@ const Signup = (props) => {
           />
         </Grid>
 
-        {/* <Button text="sign up"></Button> */}
+        <Button text="sign up"></Button>
       </Grid>
     </React.Fragment>
   );
