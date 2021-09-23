@@ -23,10 +23,10 @@ Grid.defaultProps = {
   chidren: null,
   is_flex: false,
   width: "100%",
-  padding: false,
+  padding: "false",
   margin: false,
   bg: false,
-  center: false,
+  center: true,
 };
 
 const GridBox = styled.div`

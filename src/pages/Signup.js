@@ -1,9 +1,13 @@
 import React from "react";
-import { Grid, Text, Input, Button } from "../elements";
+import { Grid, Text, Input, Button, Image } from "../elements";
 
 const Signup = (props) => {
   return (
     <React.Fragment>
+      <Grid>
+        <Image shape="right" src={props.src}/>
+      </Grid>
+      
       <Grid padding="16px">
         <Text size="32px" bold>
             {props.user_name}
@@ -74,7 +78,10 @@ const Signup = (props) => {
           />
         </Grid>
 
-        <Button text="sign up"></Button>
+        <Button text="sign up"
+          _onClick={() => {
+            console.log("회원가입할래");
+          }}></Button>
       </Grid>
     </React.Fragment>
   );

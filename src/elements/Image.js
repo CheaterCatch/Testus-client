@@ -15,11 +15,19 @@ const Image = (props) => {
         )
     }
 
-    if(shape === "rectangle"){
+    if(shape === "rectangle"){        
         return (
             <AspectOutter>
                 <AspectInner {...styles}></AspectInner>
             </AspectOutter>
+        )
+    }
+
+    if(shape === "right") {
+        return (
+            <RightImage>
+                <AspectInner {...styles}></AspectInner>
+            </RightImage>
         )
     }
 
@@ -58,6 +66,11 @@ const ImageCircle = styled.div`
     background-image: url("${(props) => props.src}");
     background-size: cover;
     margin: 4px;
+`;
+
+const RightImage = styled.div`
+    width: 50%;
+    min-width: 250px;
 `;
 
 export default Image;

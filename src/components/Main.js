@@ -9,9 +9,18 @@ const Main = (props) => {
                 <Image shape="rectangle" src={props.src}/>
             </Grid>
             <Grid is_flex>
-                <Text>부정행위 방지</Text>
-                <Text>자동채점</Text>
-                <Text>결과분석</Text>
+                {/* <Grid>
+                    <Text>부정행위 방지를 위한 문항 랜덤 출제</Text>
+                </Grid>
+                <Grid>
+                    <Text>시험 자동 채점 시스템</Text>
+                </Grid>
+                <Grid>
+                    <Text>결과 분석 시스템</Text>
+                </Grid> */}
+                <Text>부정행위 방지를 위한 문항 랜덤 출제</Text>
+                <Text>시험 자동 채점 시스템</Text>
+                <Text>결과 분석 시스템</Text>
             </Grid>
         </Grid>
       

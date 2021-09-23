@@ -2,6 +2,7 @@ import React from "react";
 import { Text, Input, Grid, Button, Image } from "../elements";
 
 const Login = (props) => {
+
   return (
     <React.Fragment>
       <Grid padding="16px">
@@ -32,24 +33,22 @@ const Login = (props) => {
           text="Login"
           _onClick={() => {
             console.log("로그인 했어!");
+            // login();
           }}
         ></Button>
 
-        <Grid is_flex padding="4px 16px">
-            <Grid is_flex>
+        <Grid is_flex>
                 <Grid>
                     <Text>Don’t have an account?</Text>
+                    {/* <Button _onClick={() => {console.log("지금 회원가입하러 갈래!");}}>
+                        Sign up now
+                    </Button> */}
+                    <Text page>Sign up now</Text>
                 </Grid>
-                <Grid>
-                    <Button>Sign up now</Button>
-                    <Button>Sign up now</Button>
-                </Grid>
-                
-            </Grid>
         </Grid>
         
         <Text>-----or-----</Text>
-        <Text>Continue with social media</Text>
+        <Text page2 >Continue with social media</Text>
         <Button is_float
           text="Login with Kakao"
           _onClick={() => {
